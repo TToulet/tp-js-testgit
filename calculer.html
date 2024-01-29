@@ -3,40 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Animation LED Rouge</title>
-    <style>
-        #app {
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            border-radius: 50%; /* Rend le div circulaire */
-            margin: 50px auto; /* Centrer le div */
-            opacity: 0.5; /* Commence avec une opacité réduite */
-            animation: blinking 1s infinite; /* Applique l'animation blinking */
-        }
-
-        /* Keyframes pour l'animation de clignotement */
-        @keyframes blinking {
-            0% { opacity: 0.1; }
-            50% { opacity: 1.0; }
-            100% { opacity: 0.1; }
-        }
-    </style>
+    <link rel="stylesheet" href="app.css">
 </head>
 <body>
 <center><div id="app">App de Tommy</div></center>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var appDiv = document.getElementById("app");
-
-        // Démarrer l'animation après 2 secondes
-        setTimeout(function() {
-            appDiv.style.animationPlayState = 'running';
-        }, 2000);
-
-        // Pour arrêter l'animation, utilisez :
-        // appDiv.style.animationPlayState = 'paused';
-    });
-</script>
 </body>
 </html>
